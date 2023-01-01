@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Blinker', sans-serif;
+}
+
+body, .App{
+    width: 100%;
+    min-height: 100vh;
+}
+
+.btn{       
+        padding: 10px 20px;
+        font-size: $small + 0.2rem;
+        border-radius: 10px;
+        background-color: $white;
+        color: $black;
+        font-weight: 600;
+        text-decoration: none;
+        transition: all 0.25s;
+
+        &:hover{
+            background-color: $blue;
+            color: $white;
+        }
+}

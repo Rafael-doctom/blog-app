@@ -1,0 +1,240 @@
+/* Color Theme Swatches in Hex */
+@import url("https://fonts.googleapis.com/css2?family=Blinker:wght@100;200;300;400;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Blinker", sans-serif;
+}
+
+body, .App {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.btn {
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  background-color: #fff;
+  color: #222;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.25s;
+}
+.btn:hover {
+  background-color: #0090dd;
+  color: #fff;
+}
+
+.header {
+  width: 100%;
+  height: 100px;
+  background-color: #222;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 60px;
+}
+@media screen and (max-width: 480px) {
+  .header {
+    padding: 0 30px;
+  }
+}
+.header .logo {
+  text-decoration: none;
+  color: #fff;
+  font-size: 2rem;
+  transition: all 0.25s;
+  border-left: 3px solid #fff;
+  border-bottom: 3px solid #fff;
+  border-radius: 10px;
+  padding: 10px;
+}
+.header .logo:hover {
+  color: #0090dd;
+  border-left: 3px solid #0090dd;
+  border-bottom: 3px solid #0090dd;
+}
+.header .nav .menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  gap: 1rem;
+}
+.header .nav .menu.active {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  position: absolute;
+  left: 0;
+  top: 100px;
+  background-color: #222;
+  padding: 30px 0;
+  -webkit-animation: show 0.25s forwards;
+          animation: show 0.25s forwards;
+}
+@-webkit-keyframes show {
+  from {
+    transform: translate3d(-120px, 0, 0);
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes show {
+  from {
+    transform: translate3d(-120px, 0, 0);
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+@media screen and (max-width: 480px) {
+  .header .nav .menu {
+    display: none;
+  }
+}
+.header .nav .menu li a {
+  color: #fff;
+  font-size: 1.2rem;
+  text-decoration: none;
+  transition: all 0.25s;
+  padding: 10px;
+}
+.header .nav .menu li a:hover {
+  color: #0090dd;
+}
+.header .nav .menu li .post {
+  border: 1px solid #0090dd;
+  border-radius: 10px;
+  color: #0090dd;
+}
+.header .nav .menu li .post:hover {
+  color: #fff;
+  border-color: #fff;
+}
+.header .nav .btnMenu {
+  padding: 10px;
+  font-size: 2.5rem;
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  display: none;
+}
+@media screen and (max-width: 480px) {
+  .header .nav .btnMenu {
+    display: block;
+  }
+}
+
+.Home {
+  width: 100%;
+  padding: 30px 60px;
+}
+@media screen and (max-width: 480px) {
+  .Home {
+    padding: 30px;
+  }
+}
+.Home .box {
+  background-color: #222;
+  max-width: 500px;
+  width: 100%;
+  min-height: 300px;
+  margin-bottom: 2rem;
+  padding: 30px 60px;
+  border-radius: 10px;
+}
+@media screen and (max-width: 480px) {
+  .Home .box {
+    padding: 30px;
+  }
+}
+.Home .box h3 {
+  font-size: 1.5rem;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+.Home .box p {
+  color: #0090dd;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.new-post {
+  width: 100%;
+  padding: 30px 60px;
+}
+@media screen and (max-width: 480px) {
+  .new-post {
+    padding: 30px;
+  }
+}
+.new-post form {
+  max-width: 500px;
+  width: 100%;
+  background-color: #222;
+  padding: 30px 60px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+}
+.new-post form label {
+  width: 100%;
+}
+.new-post form label input {
+  width: 100%;
+  height: 45px;
+  border-radius: 10px;
+  padding-left: 30px;
+  font-size: 1rem;
+  color: #222;
+  font-weight: 600;
+  border: 2px solid #0090dd;
+}
+.new-post form label input::-moz-placeholder {
+  color: #222;
+}
+.new-post form label input:-ms-input-placeholder {
+  color: #222;
+}
+.new-post form label input::placeholder {
+  color: #222;
+}
+.new-post form label textarea {
+  width: 100%;
+  padding: 30px;
+  border-radius: 10px;
+  border: 2px solid #0090dd;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #222;
+}
+.new-post form label textarea::-moz-placeholder {
+  color: #222;
+}
+.new-post form label textarea:-ms-input-placeholder {
+  color: #222;
+}
+.new-post form label textarea::placeholder {
+  color: #222;
+}
+.new-post form button {
+  cursor: pointer;
+  border: none;
+}
+
+h1 {
+  font-size: 3rem;
+  color: #0090dd;
+  margin-bottom: 1rem;
+}/*# sourceMappingURL=index.css.map */

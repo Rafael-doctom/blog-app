@@ -1,0 +1,59 @@
+.new-post{
+    width: 100%;
+    padding: 30px 60px;
+    
+    @media screen and (max-width: 480px) {
+        padding: 30px;
+    }
+
+    form{
+        max-width: 500px;
+        width: 100%;
+        background-color: $black;
+        padding: 30px 60px;
+        border-radius: 10px;
+
+        @include flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+
+        label{
+            width: 100%;
+
+            input{
+                width: 100%;
+                height: 45px;
+                border-radius: 10px;
+                padding-left: 30px;
+                font-size: $small;
+                color: $black;
+                font-weight: 600;
+                border: 2px solid $blue;
+
+                &::placeholder{
+                    color: $black;
+                }
+            }
+
+            textarea{
+                width: 100%;
+                padding: 30px;
+                border-radius: 10px;
+                border: 2px solid $blue;
+                font-size: $small;
+                font-weight: 600;
+                color: $black;
+
+                &::placeholder{
+                    color: $black;
+                }
+            }
+        }
+
+        button{
+            cursor: pointer;
+            border: none;
+        }
+    }
+}
