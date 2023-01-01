@@ -8,7 +8,11 @@ export const Header = () => {
   const menuRef = useRef();
 
   useEffect(()=> {
-    menuRef.current.classList.toggle("active");
+    const handleclick = () =>{
+        menuRef.current.classList.toggle("active");
+    }
+
+    handleclick();
   }, [menu])
   return (
     <header className="header">
@@ -24,8 +28,6 @@ export const Header = () => {
                     <Link to="/post" className="post" title="New Post">New Post</Link>
                 </li>
             </ul>
-
-            
 
             <button 
                 type="button" 

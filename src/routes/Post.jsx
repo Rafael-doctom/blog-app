@@ -31,6 +31,7 @@ export const Post = () => {
             id="title"
             value={title}
             onChange={({target})=> setTitle(target.value)}
+            required
             />
         </label>
 
@@ -42,6 +43,7 @@ export const Post = () => {
             title="body"
             value={body}
             onChange={({target})=> setBody(target.value)}
+            required
           >
           </textarea>
         </label>
